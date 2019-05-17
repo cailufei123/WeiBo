@@ -14,6 +14,12 @@
 		E61DA7F5228E952F00769902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61DA7F3228E952F00769902 /* LaunchScreen.storyboard */; };
 		E61DA800228E952F00769902 /* WeiBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61DA7FF228E952F00769902 /* WeiBoTests.swift */; };
 		E61DA80B228E952F00769902 /* WeiBoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61DA80A228E952F00769902 /* WeiBoUITests.swift */; };
+		E61DA825228E964A00769902 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61DA81A228E964A00769902 /* HomeViewController.swift */; };
+		E61DA826228E964A00769902 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61DA81C228E964A00769902 /* DiscoverViewController.swift */; };
+		E61DA827228E964A00769902 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61DA81E228E964A00769902 /* MessageViewController.swift */; };
+		E61DA828228E964A00769902 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61DA820228E964A00769902 /* ProfileViewController.swift */; };
+		E61DA829228E964A00769902 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61DA822228E964A00769902 /* MainViewController.swift */; };
+		E61DA82A228E964A00769902 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = E61DA824228E964A00769902 /* MainVCSettings.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		E61DA806228E952F00769902 /* WeiBoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiBoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61DA80A228E952F00769902 /* WeiBoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiBoUITests.swift; sourceTree = "<group>"; };
 		E61DA80C228E952F00769902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E61DA81A228E964A00769902 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E61DA81C228E964A00769902 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		E61DA81E228E964A00769902 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		E61DA820228E964A00769902 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E61DA822228E964A00769902 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E61DA824228E964A00769902 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,7 @@
 		E61DA7E9228E952D00769902 /* WeiBo */ = {
 			isa = PBXGroup;
 			children = (
+				E61DA818228E964A00769902 /* Classes */,
 				E61DA7EA228E952D00769902 /* AppDelegate.swift */,
 				E61DA7EC228E952D00769902 /* ViewController.swift */,
 				E61DA7EE228E952D00769902 /* Main.storyboard */,
@@ -123,6 +136,67 @@
 				E61DA80C228E952F00769902 /* Info.plist */,
 			);
 			path = WeiBoUITests;
+			sourceTree = "<group>";
+		};
+		E61DA818228E964A00769902 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E61DA819228E964A00769902 /* Home */,
+				E61DA81B228E964A00769902 /* DIscover */,
+				E61DA81D228E964A00769902 /* Message */,
+				E61DA81F228E964A00769902 /* Profile */,
+				E61DA821228E964A00769902 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E61DA819228E964A00769902 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E61DA81A228E964A00769902 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E61DA81B228E964A00769902 /* DIscover */ = {
+			isa = PBXGroup;
+			children = (
+				E61DA81C228E964A00769902 /* DiscoverViewController.swift */,
+			);
+			path = DIscover;
+			sourceTree = "<group>";
+		};
+		E61DA81D228E964A00769902 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				E61DA81E228E964A00769902 /* MessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		E61DA81F228E964A00769902 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E61DA820228E964A00769902 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E61DA821228E964A00769902 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E61DA822228E964A00769902 /* MainViewController.swift */,
+				E61DA823228E964A00769902 /* Resource */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E61DA823228E964A00769902 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E61DA824228E964A00769902 /* MainVCSettings.json */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +305,7 @@
 			files = (
 				E61DA7F5228E952F00769902 /* LaunchScreen.storyboard in Resources */,
 				E61DA7F2228E952F00769902 /* Assets.xcassets in Resources */,
+				E61DA82A228E964A00769902 /* MainVCSettings.json in Resources */,
 				E61DA7F0228E952D00769902 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +331,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61DA829228E964A00769902 /* MainViewController.swift in Sources */,
+				E61DA828228E964A00769902 /* ProfileViewController.swift in Sources */,
 				E61DA7ED228E952D00769902 /* ViewController.swift in Sources */,
+				E61DA826228E964A00769902 /* DiscoverViewController.swift in Sources */,
 				E61DA7EB228E952D00769902 /* AppDelegate.swift in Sources */,
+				E61DA825228E964A00769902 /* HomeViewController.swift in Sources */,
+				E61DA827228E964A00769902 /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
