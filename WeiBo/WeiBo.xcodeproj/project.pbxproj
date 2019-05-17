@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E61DA7EB228E952D00769902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61DA7EA228E952D00769902 /* AppDelegate.swift */; };
-		E61DA7ED228E952D00769902 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61DA7EC228E952D00769902 /* ViewController.swift */; };
 		E61DA7F0228E952D00769902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61DA7EE228E952D00769902 /* Main.storyboard */; };
 		E61DA7F2228E952F00769902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E61DA7F1228E952F00769902 /* Assets.xcassets */; };
 		E61DA7F5228E952F00769902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61DA7F3228E952F00769902 /* LaunchScreen.storyboard */; };
@@ -42,7 +41,6 @@
 /* Begin PBXFileReference section */
 		E61DA7E7228E952D00769902 /* WeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61DA7EA228E952D00769902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E61DA7EC228E952D00769902 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E61DA7EF228E952D00769902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E61DA7F1228E952F00769902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E61DA7F4228E952F00769902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 			children = (
 				E61DA818228E964A00769902 /* Classes */,
 				E61DA7EA228E952D00769902 /* AppDelegate.swift */,
-				E61DA7EC228E952D00769902 /* ViewController.swift */,
 				E61DA7EE228E952D00769902 /* Main.storyboard */,
 				E61DA7F1228E952F00769902 /* Assets.xcassets */,
 				E61DA7F3228E952F00769902 /* LaunchScreen.storyboard */,
@@ -333,7 +330,6 @@
 			files = (
 				E61DA829228E964A00769902 /* MainViewController.swift in Sources */,
 				E61DA828228E964A00769902 /* ProfileViewController.swift in Sources */,
-				E61DA7ED228E952D00769902 /* ViewController.swift in Sources */,
 				E61DA826228E964A00769902 /* DiscoverViewController.swift in Sources */,
 				E61DA7EB228E952D00769902 /* AppDelegate.swift in Sources */,
 				E61DA825228E964A00769902 /* HomeViewController.swift in Sources */,
