@@ -9,56 +9,76 @@
 import UIKit
 
 class MainViewController: UITabBarController {
-
+private lazy var composeBtn = UIButton(imageName: "tabbar_compose_icon_add", bgImageName: "tabbar_compose_button")
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-       //1.获取josn文件路径
-        guard let jsonPath = Bundle.main.path(forResource: "MainVCSettings.json", ofType: nil) else{
-             print("没有获取到对应的文件路径")
-            return
-        }
-        
-     
-        
-        // 2.读取json文件中的内容
-     
-        
-        guard let jsonData = NSData(contentsOfFile: jsonPath) else {
-             print("没有获取到json文件中数据")
-            return
-        }
-     let anyObject = nsdataToJSON(data: jsonData)
+       super.viewDidLoad()
 
-        guard let dictArray = anyObject as? [[String : AnyObject]] else {
         
-            return
-        }
-          print(dictArray)
-       
+    setComposeBtn()
+//        test();
         
-        
-        for dict in dictArray {
-            // 4.1.获取控制器的对应的字符串
-          
-            guard let vcName = dict["vcName"] as? String else {
-                continue
-            }
-            
-            // 4.2.获取控制器显示的title
-            guard let title = dict["title"] as? String else {
-                continue
-            }
-            
-            // 4.3.获取控制器显示的图标名称
-            guard let imageName = dict["imageName"] as? String else {
-                continue
-            }
-            // 4.4.添加子控制器
-            addChildViewController(vcName: vcName, title: title, imageName: imageName)
-        }
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+  
+        setupTabbarItems()
+    }
+    
+    
+   
+    
+    
+    
+    
+    func test(){
+        //       //1.获取josn文件路径
+        //        guard let jsonPath = Bundle.main.path(forResource: "MainVCSettings.json", ofType: nil) else{
+        //             print("没有获取到对应的文件路径")
+        //            return
+        //        }
+        //
+        //
+        //
+        //        // 2.读取json文件中的内容
+        //
+        //
+        //        guard let jsonData = NSData(contentsOfFile: jsonPath) else {
+        //             print("没有获取到json文件中数据")
+        //            return
+        //        }
+        //     let anyObject = nsdataToJSON(data: jsonData)
+        //
+        //        guard let dictArray = anyObject as? [[String : AnyObject]] else {
+        //
+        //            return
+        //        }
+        //          print(dictArray)
+        //
+        //
+        //
+        //        for dict in dictArray {
+        //            // 4.1.获取控制器的对应的字符串
+        //
+        //            guard let vcName = dict["vcName"] as? String else {
+        //                continue
+        //            }
+        //
+        //            // 4.2.获取控制器显示的title
+        //            guard let title = dict["title"] as? String else {
+        //                continue
+        //            }
+        //
+        //            // 4.3.获取控制器显示的图标名称
+        //            guard let imageName = dict["imageName"] as? String else {
+        //                continue
+        //            }
+        //            // 4.4.添加子控制器
+        //            addChildViewController(vcName: vcName, title: title, imageName: imageName)
+        //        }
+    }
     
     
     
@@ -115,3 +135,34 @@ class MainViewController: UITabBarController {
        
     }
 }
+//MARK:---=
+extension MainViewController{
+    private func setComposeBtn(){
+//        
+//        composeBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), for: .normal)
+//        composeBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), for: .selected)
+//        composeBtn.setImage(UIImage(named: "tabbar_compose_icon_add"), for: .normal)
+//        composeBtn.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), for: .selected)
+//
+//        composeBtn.sizeToFit()
+        tabBar.addSubview(composeBtn)
+        composeBtn.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.size.height * 0.5)
+    }
+    
+    private func setupTabbarItems(){
+        guard let itemArrs = tabBar.items else{
+            return
+        }
+        for i in 0..<itemArrs.count {
+            
+            let item = itemArrs[i]
+            if i == 2{
+                item.isEnabled = false
+                continue
+            }
+            
+        }
+    }
+  
+}
+
